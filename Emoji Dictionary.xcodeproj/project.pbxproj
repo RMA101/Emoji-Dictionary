@@ -12,6 +12,7 @@
 		70BE54F01DEE127400D5F0F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BE54EF1DEE127400D5F0F9 /* Assets.xcassets */; };
 		70BE54F31DEE127400D5F0F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BE54F11DEE127400D5F0F9 /* LaunchScreen.storyboard */; };
 		70BE54FB1DEE21D800D5F0F9 /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE54FA1DEE21D800D5F0F9 /* EmojiViewController.swift */; };
+		70BE54FE1DEE3A7200D5F0F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE54FD1DEE3A7200D5F0F9 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		70BE54F21DEE127400D5F0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70BE54F41DEE127400D5F0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70BE54FA1DEE21D800D5F0F9 /* EmojiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiViewController.swift; path = ../EmojiViewController.swift; sourceTree = "<group>"; };
+		70BE54FD1DEE3A7200D5F0F9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		70BE54E71DEE127400D5F0F9 /* Emoji Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				70BE54FD1DEE3A7200D5F0F9 /* DetailViewController.swift */,
 				70BE54FA1DEE21D800D5F0F9 /* EmojiViewController.swift */,
 				70BE54EC1DEE127400D5F0F9 /* Main.storyboard */,
 				70BE54FC1DEE229900D5F0F9 /* Supporting Files */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BE54FE1DEE3A7200D5F0F9 /* DetailViewController.swift in Sources */,
 				70BE54E91DEE127400D5F0F9 /* AppDelegate.swift in Sources */,
 				70BE54FB1DEE21D800D5F0F9 /* EmojiViewController.swift in Sources */,
 			);

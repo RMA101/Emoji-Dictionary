@@ -35,6 +35,17 @@ class EmojiViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.textLabel?.text = emojis[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let emoji = emojis[indexPath.row]
+        performSegue(withIdentifier: "emojiDetailSegue", sender: emoji)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailVC = segue.destination as! DetailViewController
+        detailVC.emoji = sender as! String
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

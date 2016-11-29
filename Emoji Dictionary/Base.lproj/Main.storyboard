@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s6H-Zd-S87">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="71D-JU-LNR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,18 +35,20 @@
                             <constraint firstItem="cZy-Xp-QZd" firstAttribute="leading" secondItem="HZK-fQ-Gic" secondAttribute="leading" id="yfu-RO-S53"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="CKX-OQ-ytb"/>
                     <connections>
                         <outlet property="emojiTableView" destination="cZy-Xp-QZd" id="WL8-kh-b8b"/>
+                        <segue destination="pSY-po-P15" kind="show" identifier="emojiDetailSegue" id="nvj-oa-Iiu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Gj-Mf-Wcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7.2000000000000002" y="59.820089955022496"/>
+            <point key="canvasLocation" x="946.39999999999998" y="59.820089955022496"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Coo-DM-NYY">
             <objects>
-                <viewController id="pSY-po-P15" sceneMemberID="viewController">
+                <viewController id="pSY-po-P15" customClass="DetailViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pPB-fj-kYO"/>
                         <viewControllerLayoutGuide type="bottom" id="OxJ-zh-ao2"/>
@@ -56,14 +58,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXY-Hy-zDa">
-                                <rect key="frame" x="38" y="28" width="298" height="273"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <rect key="frame" x="38" y="72" width="298" height="229"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Awesome detail on the thumbs up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ute-34-imi">
-                                <rect key="frame" x="58" y="323" width="259" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ute-34-imi">
+                                <rect key="frame" x="167" y="323" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,16 +72,40 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="centerX" secondItem="SGl-Bf-oHh" secondAttribute="centerX" id="Bh4-zM-chg"/>
-                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="top" secondItem="pPB-fj-kYO" secondAttribute="bottom" constant="8" symbolic="YES" id="Wyl-Vl-gyv"/>
-                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="leading" secondItem="SGl-Bf-oHh" secondAttribute="leadingMargin" constant="22" id="ceR-E4-dxd"/>
-                            <constraint firstItem="OxJ-zh-ao2" firstAttribute="top" secondItem="wXY-Hy-zDa" secondAttribute="bottom" constant="366" id="sXb-59-coc"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="centerX" secondItem="SGl-Bf-oHh" secondAttribute="centerX" id="0Uv-vg-BAU"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="centerX" secondItem="ute-34-imi" secondAttribute="centerX" id="39L-t5-lSy"/>
+                            <constraint firstItem="ute-34-imi" firstAttribute="centerY" secondItem="SGl-Bf-oHh" secondAttribute="centerY" id="CUc-ZJ-OBx"/>
+                            <constraint firstItem="ute-34-imi" firstAttribute="top" secondItem="wXY-Hy-zDa" secondAttribute="bottom" constant="22" id="VLK-z0-TRF"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="top" secondItem="pPB-fj-kYO" secondAttribute="bottom" constant="8" symbolic="YES" id="ZSa-b7-u6f"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="leading" secondItem="SGl-Bf-oHh" secondAttribute="leadingMargin" constant="22" id="p1z-vE-KI8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="ute-34-imi" id="mah-xG-S3o"/>
+                        <outlet property="emojiLabel" destination="wXY-Hy-zDa" id="6YF-rV-Umq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJn-MS-JOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="59.820089955022496"/>
+            <point key="canvasLocation" x="1735.2" y="59.820089955022496"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="95l-Wa-JED">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="71D-JU-LNR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ohe-cz-xi8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s6H-Zd-S87" kind="relationship" relationship="rootViewController" id="4pc-cu-XQ4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mU9-1j-UqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="60"/>
         </scene>
     </scenes>
 </document>
