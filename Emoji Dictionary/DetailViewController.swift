@@ -10,37 +10,23 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var yearCreatedLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
     
     
-    var emoji = "no emoji"
+    var emoji = Emoji()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
-        
-        if emoji == "😁" {
-            detailLabel.text = "Laughing head"
-        }
-        if emoji == "😎" {
-            detailLabel.text = "Cool dude"
-        }
-        if emoji == "😱" {
-            detailLabel.text = "Shocked"
-        }
-        if emoji == "💩" {
-            detailLabel.text = "Gross"
-        }
-        if emoji == "😞" {
-            detailLabel.text = "Disappointed"
-        }
-        if emoji == "😭" {
-            detailLabel.text = "Crying"
-        }
+        emojiLabel.text = emoji.stringEmoji
+        yearCreatedLabel.text = "Year Created: \(emoji.yearCreated)"
+        categoryLabel.text = "Category: \(emoji.category)"
+        detailLabel.text = emoji.definition
         
         
     }

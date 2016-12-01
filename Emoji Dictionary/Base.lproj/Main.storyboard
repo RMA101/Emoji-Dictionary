@@ -57,32 +57,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXY-Hy-zDa">
-                                <rect key="frame" x="38" y="72" width="298" height="229"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ute-34-imi">
                                 <rect key="frame" x="167" y="323" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35q-hA-iVx">
+                                <rect key="frame" x="123" y="369" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year Created: 2010" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1j-YV-gE5">
+                                <rect key="frame" x="114" y="416" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXY-Hy-zDa">
+                                <rect key="frame" x="39" y="72" width="298" height="229"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="centerX" secondItem="SGl-Bf-oHh" secondAttribute="centerX" id="0Uv-vg-BAU"/>
-                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="centerX" secondItem="ute-34-imi" secondAttribute="centerX" id="39L-t5-lSy"/>
-                            <constraint firstItem="ute-34-imi" firstAttribute="centerY" secondItem="SGl-Bf-oHh" secondAttribute="centerY" id="CUc-ZJ-OBx"/>
-                            <constraint firstItem="ute-34-imi" firstAttribute="top" secondItem="wXY-Hy-zDa" secondAttribute="bottom" constant="22" id="VLK-z0-TRF"/>
-                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="top" secondItem="pPB-fj-kYO" secondAttribute="bottom" constant="8" symbolic="YES" id="ZSa-b7-u6f"/>
-                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="leading" secondItem="SGl-Bf-oHh" secondAttribute="leadingMargin" constant="22" id="p1z-vE-KI8"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="centerX" secondItem="SGl-Bf-oHh" secondAttribute="centerX" id="6gc-h0-qm6"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="top" secondItem="pPB-fj-kYO" secondAttribute="bottom" constant="8" symbolic="YES" id="9AN-2j-udq"/>
+                            <constraint firstItem="35q-hA-iVx" firstAttribute="centerX" secondItem="q1j-YV-gE5" secondAttribute="centerX" id="Fu6-oh-4DI"/>
+                            <constraint firstItem="ute-34-imi" firstAttribute="top" secondItem="wXY-Hy-zDa" secondAttribute="bottom" constant="22" id="HzV-It-f0j"/>
+                            <constraint firstItem="ute-34-imi" firstAttribute="centerX" secondItem="35q-hA-iVx" secondAttribute="centerX" id="IuK-fR-LU1"/>
+                            <constraint firstItem="35q-hA-iVx" firstAttribute="top" secondItem="ute-34-imi" secondAttribute="bottom" constant="25" id="cyn-JQ-oNS"/>
+                            <constraint firstItem="q1j-YV-gE5" firstAttribute="top" secondItem="35q-hA-iVx" secondAttribute="bottom" constant="26" id="eGR-aS-dcg"/>
+                            <constraint firstItem="ute-34-imi" firstAttribute="centerY" secondItem="SGl-Bf-oHh" secondAttribute="centerY" id="g7Q-zV-cOJ"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="leading" secondItem="SGl-Bf-oHh" secondAttribute="leadingMargin" constant="23" id="hfx-yo-lDj"/>
+                            <constraint firstItem="wXY-Hy-zDa" firstAttribute="centerX" secondItem="ute-34-imi" secondAttribute="centerX" id="sO3-ZP-err"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="35q-hA-iVx" id="gjB-Vw-mKZ"/>
                         <outlet property="detailLabel" destination="ute-34-imi" id="mah-xG-S3o"/>
                         <outlet property="emojiLabel" destination="wXY-Hy-zDa" id="6YF-rV-Umq"/>
+                        <outlet property="yearCreatedLabel" destination="q1j-YV-gE5" id="bac-Qo-qc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJn-MS-JOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
